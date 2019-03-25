@@ -1,0 +1,61 @@
+h1, h2 {
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+}
+
+.burger-display {
+  display: flex;
+  justify-content: space-around;
+  width: 960px;
+  margin-top: 3em;
+
+
+  .burger-container {
+    width: 17em;
+    height: 23em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+
+.burger {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0.5em 0;
+  height: 4em;
+  display: flex;
+  white-space: nowrap;
+  transition: all 0.6s ease;
+
+  h3 {
+    width: 8em;
+    margin-left: 1em;
+  }
+
+  .devour {
+    width: 4em;
+    margin: 1em;
+    color: #fff;
+    background-color: #B51368;
+    border-color: #B51368;
+
+    &:active {
+      background-color: #C2146F;
+    }
+  }
+}
+
+.leaving {
+  margin-left: 17em;
+  margin-right: -17em;
+  filter: opacity(0);
+}
+
+.arriving {
+  margin-left: -17em;
+  margin-right: 17em;
+  filter:opacity(0);
+}

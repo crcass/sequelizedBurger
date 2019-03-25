@@ -1,0 +1,12 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+}
+
+@import '../scss/main';
+@import '../scss/form';
+@import '../scss/burger';

@@ -1,0 +1,28 @@
+<h1>EDB Express</h1>
+
+{{> form}}
+
+<div class="burger-display">
+
+  <div>
+    <h2>Wait List</h2>
+    <div class="burger-container" id="uneaten">
+      {{#each burgers}}
+        {{#unless devoured}}
+          {{> burger-block devoured=false}}
+        {{/unless}}
+      {{/each}} 
+    </div>
+  </div>
+
+  <div>
+    <h2>Devoured</h2>
+    <div class="burger-container" id="eaten">
+      {{#each burgers}}
+        {{#if devoured}}
+          {{> burger-block devoured=true}}
+        {{/if}}
+      {{/each}} 
+    </div>
+  </div>
+</div>

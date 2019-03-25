@@ -1,0 +1,4 @@
+<div class="burger {{#unless dataValues.devoured}}new{{/unless}}{{#if dataValues.devoured}}devoured{{/if}}" id="{{dataValues.id}}">
+  <h3>{{dataValues.id}} {{dataValues.burger_name}}</h3>
+  {{#unless dataValues.devoured}}<button class="devour" id="btn-{{dataValues.id}}" value="{{dataValues.id}}">devour</button>{{/unless}}
+</div>
